@@ -1,35 +1,35 @@
-# PassForge — Java Password Generator
+# PassForge
 
-PassForge is a Java-based password generation application designed to generate passwords using configurable character sets. The project demonstrates core Java programming concepts, modular code organization, and password generation logic.
+### Craft Stronger Passwords with Java
+
+PassForge is a Java-based password generator designed to simplify password creation through a structured, modular approach. It uses character sets and dedicated Java classes to handle the password generation process.
+
+The project combines practical Java programming with a useful everyday application, making it a foundation for exploring password generation, string manipulation, and object-oriented design.
 
 ## Overview
 
-Creating strong passwords is an important part of protecting online accounts and digital information. PassForge provides a simple Java application for generating passwords through a programmatic approach.
-
-The project is built using Java and separates its functionality into dedicated classes for password generation, character handling, and application execution.
+Creating unique passwords for different accounts is an important security practice. PassForge provides a straightforward way to generate passwords through a Java application while keeping the underlying logic organized and easy to understand.
 
 ## Features
 
-- **Password Generation:** Generate passwords using Java.
-- **Character Handling:** Organize character sets for password construction.
-- **Modular Design:** Separate classes for generation logic and password-related operations.
-- **Java Fundamentals:** Demonstrates object-oriented programming and core Java concepts.
-- **Test Class:** Includes a `GeneratorTest.java` source file for testing-related functionality.
+- **Password Generation:** Generate passwords through a Java application.
+- **Character Set Management:** Organize the characters used to construct passwords.
+- **Modular Code Structure:** Separate password-related functionality into dedicated Java classes.
+- **Object-Oriented Design:** Apply Java classes, methods, and reusable program logic.
+- **Maintainable Structure:** Keep the application's main components organized for future development.
 
-## Tech Stack
+## Built With
 
-- **Language:** Java
-- **Development Environment:** IntelliJ IDEA / Visual Studio Code
-- **Version Control:** Git and GitHub
+- **Java** — Application logic and password generation.
+- **JDK** — Compiling and running the application.
+- **Git & GitHub** — Version control and project hosting.
 
 ## Project Structure
 
 ```text
 PassForge/
-├── .gitignore
 ├── README.md
-└── Password_Generator/
-    ├── .gitignore
+└── PassForge/
     ├── README.md
     └── src/
         ├── Alphabet.java
@@ -39,83 +39,71 @@ PassForge/
         └── Password.java
 ```
 
+### Core Components
+
+| File | Responsibility |
+|---|---|
+| `Main.java` | Application entry point |
+| `Generator.java` | Password generation logic |
+| `Alphabet.java` | Character set handling |
+| `Password.java` | Password-related functionality |
+| `GeneratorTest.java` | Testing-related code |
+
 ## Getting Started
 
 ### Prerequisites
 
-- Java Development Kit (JDK)
-- A terminal or command prompt
-- Visual Studio Code or IntelliJ IDEA
-
-Verify that Java is installed:
+Install a Java Development Kit (JDK) and verify that Java is available from your terminal.
 
 ```bash
 java -version
 javac -version
 ```
 
-### Installation
+### 1. Clone the Repository
 
-1. Clone the repository:
+```bash
+git clone https://github.com/sangushetty1129-art/PassForge.git
+```
 
-   ```bash
-   git clone https://github.com/sangushetty1129-art/PassForge.git
-   ```
+### 2. Navigate to the Project
 
-2. Navigate to the Java project directory:
+```bash
+cd PassForge/PassForge
+```
 
-   ```bash
-   cd PassForge/Password_Generator
-   ```
-
-### Compile and Run
-
-From the `Password_Generator` directory, compile the application source files:
+### 3. Compile the Application
 
 ```bash
 javac -d out src/Alphabet.java src/Generator.java src/Password.java src/Main.java
 ```
 
-Run the application:
+### 4. Run PassForge
 
 ```bash
 java -cp out Main
 ```
 
-Follow the prompts displayed by the application.
-
-*Note: These commands assume the source files do not declare a Java package and that `Main.java` is the application entry point.*
-
-## Learning Objectives
-
-This project provides an opportunity to explore:
-
-- Java classes and methods
-- Object-oriented programming
-- Character and string manipulation
-- Application modularity
-- Basic software testing
-- Git-based version control
+These commands assume the source files have no package declarations and `Main.java` is the entry point.
 
 ## Future Enhancements
 
-Potential improvements include:
+- Custom password length selection
+- Options for uppercase letters, lowercase letters, digits, and special characters
+- Cryptographically secure random number generation
+- Password strength estimation
+- Improved input validation and automated testing
 
-- User-configurable password length
-- Options for uppercase letters, lowercase letters, numbers, and special characters
-- Password strength evaluation
-- Secure random number generation
-- Automated unit tests
-- A graphical user interface
+These are possible future improvements, not claims about existing functionality.
 
-These are potential enhancements and may not all be implemented in the current version.
-
-## Author
+## About the Developer
 
 **Sangamesh S S**
 
-GitHub: [@sangushetty1129-art](https://github.com/sangushetty1129-art)
+Information Science and Engineering
+
+[GitHub Profile](https://github.com/sangushetty1129-art)
 
 ---
 
-If you find this project useful, feel free to explore the source code and suggest improvements.
+*PassForge — Simple password generation, built with Java.*
